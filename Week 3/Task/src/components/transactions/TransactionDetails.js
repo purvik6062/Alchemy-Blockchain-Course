@@ -112,12 +112,12 @@ function TransactionDetails() {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><b>Transaction Hash:</b></td>
-                                        <td>{selectedTransaction.transactionHash}</td>
-                                    </tr>
-                                    <tr>
                                         <td><b>Block Number:</b></td>
                                         <td>{selectedTransaction.blockNumber}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Transaction Hash:</b></td>
+                                        <td>{selectedTransaction.transactionHash}</td>
                                     </tr>
                                     <tr>
                                         <td><b>From:</b></td>
@@ -126,6 +126,10 @@ function TransactionDetails() {
                                     <tr>
                                         <td><b>To:</b></td>
                                         <td>{selectedTransaction.to}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Gas Used:</b></td>
+                                        <td>{parseInt(selectedTransaction.gasUsed._hex, 16)}</td>
                                     </tr>
                                 </tbody>
                             </table>
