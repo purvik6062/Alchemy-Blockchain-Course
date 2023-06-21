@@ -1,0 +1,44 @@
+.allTransactionsMainClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+
+.allTransactions_sub {
+  border: 2px solid rgb(0, 0, 0);
+  max-width: fit-content;
+  overflow-y: scroll;
+  max-height: 70vh;
+  min-width: 44vw;
+  min-height: 30vh;
+}
+.allTransactions_tableHead {
+  position: sticky;
+  top: 0;
+  background-color: rgb(190, 221, 248);
+}
+
+.selectedTransationMainClass {
+  margin: 3%;
+}
+.selectedTransation_sub {
+  text-align: center;
+}
+
+.selectedTransation_detailClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .allTransactions_sub::-webkit-scrollbar {
+  width: 15px;
+} */
+
+/* .allTransactions_sub::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.allTransactions_sub::-webkit-scrollbar-thumb {
+  background-color: transparent;
+} */
