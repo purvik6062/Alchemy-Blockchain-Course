@@ -15,6 +15,7 @@ async function main() {
   console.log(artifacts)
 
   let Contract = new hre.ethers.ContractFactory(artifacts.abi, artifacts.bytecode, wallet);
+  console.log("Contract:-", Contract)
   const contract = await Contract.deploy();
   const instanceContract = await contract.deployed();
   console.log("Instance Contract: ", instanceContract.address)
