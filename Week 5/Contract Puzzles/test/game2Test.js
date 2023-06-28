@@ -12,7 +12,11 @@ describe('Game2', function () {
   it('should be a winner', async function () {
     const { game } = await loadFixture(deployContractAndSetVariables);
 
+    // console.log("game:- ", game);
     // press all the right switches to win this stage
+    await game.switchOn(20);
+    await game.switchOn(47);
+    await game.switchOn(212);
 
     await game.win();
 
