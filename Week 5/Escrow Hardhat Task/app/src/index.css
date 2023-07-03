@@ -1,0 +1,97 @@
+body {
+  background-color: #af9a9a;
+  font-family: "Muli", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  border-color: #423939;
+}
+
+.button {
+  margin: 5% auto;
+  width: fit-content;
+  background-color: #423939;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #786868;
+}
+
+.existing-contract {
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid #eee;
+  background-color: #393e46;
+  border-radius: 12px;
+}
+
+.existing-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+  border-radius: 12px;
+}
+
+.existing-contract ul > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 10px;
+}
+
+.existing-contract ul > li > div {
+  margin: 0 5px;
+  color: #222;
+}
+
+.existing-contract ul > li > :first-child {
+  font-weight: bold;
+}
